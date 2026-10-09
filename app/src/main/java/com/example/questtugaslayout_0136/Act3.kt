@@ -63,6 +63,18 @@ fun TugasLayout(modifier: Modifier = Modifier){
             warnaNomor = colorResource(R.color.teal_200),
             warnaAlamat = colorResource(R.color.yellow)
         )
+
+        //Mahasiswa3
+        KartuMahasiswa(
+            nama = stringResource(R.string.mhs3),
+            nomor = stringResource(R.string.nohp),
+            alamat = stringResource(R.string.almt3),
+            warna = colorResource(R.color.blue),
+            tinggiKolom = 130.dp,
+            tebalNama = FontWeight.Bold,
+            warnaNomor = colorResource(R.color.teal_200),
+            warnaAlamat = colorResource(R.color.yellow)
+        )
     }
 }
 
