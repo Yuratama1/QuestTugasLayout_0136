@@ -157,15 +157,6 @@ fun KartuMahasiswa(
                     .padding(5.dp)
             )
 
-            //logo kanan
-            Image(
-                painter = gambar,
-                contentDescription = null,
-                modifier = Modifier
-                    .size(60.dp)
-                    .padding(5.dp)
-            )
-
             //Informasi Mahasiswa
             Column(
                 modifier = Modifier.weight(1f),
@@ -193,6 +184,14 @@ fun KartuMahasiswa(
                     color = warnaAlamat
                 )
             }
+            //logo kanan
+            Image(
+                painter = gambar,
+                contentDescription = null,
+                modifier = Modifier
+                    .size(60.dp)
+                    .padding(5.dp)
+            )
         }
     }
 }
