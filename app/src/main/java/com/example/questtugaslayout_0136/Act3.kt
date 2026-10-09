@@ -1,11 +1,14 @@
 package com.example.questtugaslayout_0136
 
+import android.R.attr.text
 import android.graphics.Color
 import android.graphics.fonts.FontFamily
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
@@ -87,6 +90,18 @@ fun TugasLayout(modifier: Modifier = Modifier){
             warnaNomor = colorResource(R.color.teal_200),
             warnaAlamat = colorResource(R.color.yellow)
         )
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(250.dp)
+        ){
+            text(
+                text = stringResource(R.string.copy),
+                modifier = Modifier
+                    .align(Alignment.BottomCenter)
+                    .padding(bottom = 1.dp)
+            )
+        }
     }
 }
 
