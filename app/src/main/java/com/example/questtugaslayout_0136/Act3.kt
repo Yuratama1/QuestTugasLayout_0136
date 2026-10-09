@@ -41,6 +41,16 @@ fun TugasLayout(modifier: Modifier = Modifier){
             text = stringResource(R.string.univ),
             fontSize = 15.sp
         )
+
+        //Mahasiswa1
+        KartuMahasiswa(
+            nama = stringResource(R.string.mhs1),
+            alamat = stringResource(R.string.almt1),
+            warna = colorResource(R.color.grey),
+            tinggiKolom = 100.dp,
+            fontNama = FontFamily.Cursive,
+            warnaAlamat = colorResource(R.color.yellow)
+        )
     }
 }
 
